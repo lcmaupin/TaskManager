@@ -1,6 +1,6 @@
 let managerRunning = true;
-let tasks = `Charge MacBook` + "\n" + `Master JavaScript`;
-// let tasks = [`Charge MacBook`, `Master JavaScript`];
+// let tasks = `Charge MacBook` + "\n" + `Master JavaScript`;
+let tasks = [`Charge MacBook`, `Master JavaScript`];
 var listOfTasks = [];
 let newTask;
 let removeTask;
@@ -27,8 +27,10 @@ while (managerRunning){
             break;
         }
         if (userEntry === "NEW"){
-            newTask = prompt(`Please enter a new task`)
-            tasks = tasks.concat("\n" + `${newTask}`);
+            newTask = prompt(`Please enter a new task`);
+            tasks = tasks.concat(
+                [`${newTask}`]
+            );
             alert(`"${newTask}" has been added`);
             break;
         }
