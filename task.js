@@ -1,6 +1,6 @@
 let managerRunning = true;
-// let tasks = `Charge MacBook` + "\n" + `Master JavaScript`;
-let tasks = [`Charge MacBook`, `Master JavaScript`];
+let tasks = `Charge MacBook` + "\n" + `Master JavaScript`;
+// let tasks = [`Charge MacBook`, `Master JavaScript`];
 var listOfTasks = [];
 let newTask;
 let removeTask;
